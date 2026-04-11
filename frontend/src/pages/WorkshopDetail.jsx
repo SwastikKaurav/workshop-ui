@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
+import './WorkshopDetail.css'
 
 const workshops = [
   { id: 1, title: 'Python', duration: '2 days', level: 'Beginner', description: 'Learn Python programming from scratch. Covers basics, data structures and file handling.', instructor: 'Dr. Anil Kumar' },
@@ -11,18 +12,21 @@ function WorkshopDetail() {
   const { id } = useParams()
   const workshop = workshops.find(w => w.id === parseInt(id))
 
-  if (!workshop) return <h2>Workshop not found</h2>
+  if (!workshop) return <h2 className="not-found">Workshop not found</h2>
 
   return (
-    <div>
-      <h1>{workshop.title} Workshop</h1>
-      <p><strong>Duration:</strong> {workshop.duration}</p>
-      <p><strong>Level:</strong> {workshop.level}</p>
-      <p><strong>Instructor:</strong> {workshop.instructor}</p>
-      <p>{workshop.description}</p>
-      <button>Book This Workshop</button>
-      <br />
-      <Link to="/">Back to Workshops</Link>
+    <div className="detail-container">
+      <div className="detail-card">
+        <h1>{workshop.title} Workshop</h1>
+        <div className="detail-info">
+          <p><strong>Duration:</strong> {workshop.duration}</p>
+          <p><strong>Level:</strong> {workshop.level}</p>
+          <p><strong>Instructor:</strong> {workshop.instructor}</p>
+        </div>
+        <p className="detail-description">{workshop.description}</p>
+        <button className="btn">Book This Workshop</button>
+        <Link to="/" className="back-link">← Back to Workshops</Link>
+      </div>
     </div>
   )
 }
