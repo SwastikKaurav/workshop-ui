@@ -18,30 +18,30 @@ This is a React-based frontend redesign of the FOSSEE Workshop Booking portal bu
 - Profile - User profile
 
 ## Design Principles
-I focused on mobile-first design, clean visual hierarchy, and easy navigation. Used a consistent color scheme of dark navy and red throughout all pages.
+I focused on mobile-first design since most students access websites on their phones. I maintained a clean visual hierarchy with a consistent color scheme of dark navy and red throughout all pages to give it a modern and professional look.
 
 ## Responsiveness
-Used CSS Grid and Flexbox with media queries for screens below 768px to ensure all pages work well on mobile devices.
+Used CSS Grid and Flexbox for layouts. Added media queries for screens below 768px so all pages work well on mobile devices. The navbar stacks vertically on small screens and cards go single column.
 
 ## Trade-offs
-Kept styling minimal and fast-loading instead of using heavy UI libraries. Chose plain CSS over frameworks to keep bundle size small.
+I chose plain CSS over heavy UI frameworks like Bootstrap or Material UI to keep the app lightweight and fast loading. This means more manual styling but better performance.
 
 ## Challenges
-The most challenging part was setting up React Router and understanding how navigation works between pages. I approached it by breaking it down into small pieces and testing each route one by one.
+The most challenging part was understanding React Router and how navigation works between pages. I approached it by building one page at a time and testing each route before moving to the next.
 
 ## Screenshots
 
 ### Home Page
-![Home Page](Screenshots/Home.png)
+![Home Page](frontend/Screenshots/Home.pngS)
 
 ### Login Page
-![Login Page](Screenshots/Login.png)
+![Login Page](frontend/Screenshots/Login.png)
 
 ### Register Page
-![Register Page](Screenshots/Register.png)
+![Register Page](frontend/Screenshots/Register.png)
 
 ### Workshop Detail Page
-![Workshop Detail](Screenshots/WorkshopDetails.png)
+![Workshop Detail](frontend/Screenshots/WorkshopDetails.png)
 
 ### Profile Page
-![Profile Page](Screenshots/Profile.png)
+![Profile Page](frontend/Screenshots/Profile.png)
