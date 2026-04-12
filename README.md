@@ -32,7 +32,7 @@ The most challenging part was understanding React Router and how navigation work
 ## Screenshots
 
 ### Home Page
-![Home Page](Screenshots/Home.pngHome.pngS)
+![Home Page](Screenshots/Home.png)
 
 ### Login Page
 ![Login Page](Screenshots/Login.png)
