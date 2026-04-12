@@ -1,7 +1,9 @@
+import './Footer.css'
+
 function Footer() {
   return (
-    <footer>
-      <p>© 2026 FOSSEE, IIT Bombay. All rights reserved.</p>
+    <footer className="footer">
+      <p>© 2025 FOSSEE, IIT Bombay. All rights reserved.</p>
     </footer>
   )
 }
