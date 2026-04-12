@@ -1,3 +1,5 @@
+import './Profile.css'
+
 function Profile() {
   const user = {
     name: 'Swastik Kaurav',
@@ -10,20 +12,41 @@ function Profile() {
   }
 
   return (
-    <div>
-      <h1>My Profile</h1>
+    <div className="profile-container">
+      <div className="profile-card">
+        <div className="profile-header">
+          <div className="profile-avatar">
+            {user.name.charAt(0)}
+          </div>
+          <h1>{user.name}</h1>
+          <span className="profile-role">{user.role}</span>
+        </div>
 
-      <div>
-        <h3>{user.name}</h3>
-        <p><strong>Email:</strong> {user.email}</p>
-        <p><strong>Role:</strong> {user.role}</p>
-        <p><strong>College:</strong> {user.college}</p>
-        <p><strong>City:</strong> {user.city}</p>
-        <p><strong>State:</strong> {user.state}</p>
-        <p><strong>Workshops Booked:</strong> {user.workshopsBooked}</p>
+        <div className="profile-info">
+          <div className="info-item">
+            <strong>Email</strong>
+            <p>{user.email}</p>
+          </div>
+          <div className="info-item">
+            <strong>College</strong>
+            <p>{user.college}</p>
+          </div>
+          <div className="info-item">
+            <strong>City</strong>
+            <p>{user.city}</p>
+          </div>
+          <div className="info-item">
+            <strong>State</strong>
+            <p>{user.state}</p>
+          </div>
+          <div className="info-item">
+            <strong>Workshops Booked</strong>
+            <p>{user.workshopsBooked}</p>
+          </div>
+        </div>
+
+        <button className="btn">Edit Profile</button>
       </div>
-
-      <button>Edit Profile</button>
     </div>
   )
 }
