@@ -1,16 +1,32 @@
-# React + Vite
+# FOSSEE Workshop Booking - UI Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
+This is a React-based frontend redesign of the FOSSEE Workshop Booking portal built with Vite + React.
 
-Currently, two official plugins are available:
+## Setup Instructions
+1. Clone the repository
+2. Navigate to frontend folder: `cd frontend`
+3. Install dependencies: `npm install`
+4. Run the app: `npm run dev`
+5. Open `http://localhost:5173`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Pages
+- Home - Workshop listing
+- Login - User login
+- Register - New user registration
+- Workshop Detail - Individual workshop info
+- Profile - User profile
 
-## React Compiler
+## Design Principles
+I focused on mobile-first design, clean visual hierarchy, and easy navigation. Used a consistent color scheme of dark navy and red throughout all pages.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Responsiveness
+Used CSS Grid and Flexbox with media queries for screens below 768px to ensure all pages work well on mobile devices.
 
-## Expanding the ESLint configuration
+## Trade-offs
+Kept styling minimal and fast-loading instead of using heavy UI libraries. Chose plain CSS over frameworks to keep bundle size small.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Challenges
+The most challenging part was setting up React Router and understanding how navigation works between pages. I approached it by breaking it down into small pieces and testing each route one by one.
+
+## Screenshots
