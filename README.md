@@ -32,16 +32,16 @@ The most challenging part was understanding React Router and how navigation work
 ## Screenshots
 
 ### Home Page
-![Home Page](frontend/Screenshots/Home.pngS)
+![Home Page](Screenshots/Home.pngHome.pngS)
 
 ### Login Page
-![Login Page](frontend/Screenshots/Login.png)
+![Login Page](Screenshots/Login.png)
 
 ### Register Page
-![Register Page](frontend/Screenshots/Register.png)
+![Register Page](Screenshots/Register.png)
 
 ### Workshop Detail Page
-![Workshop Detail](frontend/Screenshots/WorkshopDetails.png)
+![Workshop Detail](Screenshots/WorkshopDetails.png)
 
 ### Profile Page
-![Profile Page](frontend/Screenshots/Profile.png)
+![Profile Page](Screenshots/Profile.png)
