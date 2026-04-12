@@ -30,3 +30,18 @@ Kept styling minimal and fast-loading instead of using heavy UI libraries. Chose
 The most challenging part was setting up React Router and understanding how navigation works between pages. I approached it by breaking it down into small pieces and testing each route one by one.
 
 ## Screenshots
+
+### Home Page
+![Home Page](Screenshots/Home.png)
+
+### Login Page
+![Login Page](Screenshots/Login.png)
+
+### Register Page
+![Register Page](Screenshots/Register.png)
+
+### Workshop Detail Page
+![Workshop Detail](Screenshots/WorkshopDetails.png)
+
+### Profile Page
+![Profile Page](Screenshots/Profile.png)
