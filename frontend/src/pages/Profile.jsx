@@ -7,9 +7,9 @@ function Profile() {
     name: 'Swastik Kaurav',
     email: 'swastik@example.com',
     role: 'Coordinator',
-    college: 'VIT Bhopal',
-    city: 'Bhopal',
-    state: 'Madhya Pradesh',
+    college: 'IIT Bombay',
+    city: 'Mumbai',
+    state: 'Maharashtra',
     workshopsBooked: 3
   }
 
