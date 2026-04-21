@@ -1,3 +1,4 @@
+// Footer component - shown on every page
 import './Footer.css'
 
 function Footer() {

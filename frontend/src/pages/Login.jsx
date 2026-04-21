@@ -1,8 +1,10 @@
+// Login page - handles user login with controlled inputs
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Auth.css'
 
 function Login() {
+  // State for email and password inputs
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -11,6 +13,7 @@ function Login() {
       <div className="auth-card">
         <h2>Login</h2>
 
+        {/* Email input - controlled component */}
         <div className="form-group">
           <label>Email</label>
           <input
@@ -21,6 +24,7 @@ function Login() {
           />
         </div>
 
+        {/* Password input - controlled component */}
         <div className="form-group">
           <label>Password</label>
           <input
@@ -33,6 +37,7 @@ function Login() {
 
         <button className="btn">Login</button>
 
+        {/* Link to register page */}
         <p className="auth-link">
           Don't have an account? <Link to="/register">Register</Link>
         </p>

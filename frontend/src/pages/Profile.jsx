@@ -1,20 +1,24 @@
+// Profile page - displays logged in user information
 import './Profile.css'
 
 function Profile() {
+  // Static user data - would come from API in production
   const user = {
     name: 'Swastik Kaurav',
     email: 'swastik@example.com',
     role: 'Coordinator',
-    college: 'IIT Bombay',
-    city: 'Mumbai',
-    state: 'Maharashtra',
+    college: 'VIT Bhopal',
+    city: 'Bhopal',
+    state: 'Madhya Pradesh',
     workshopsBooked: 3
   }
 
   return (
     <div className="profile-container">
       <div className="profile-card">
+        {/* Profile header with avatar */}
         <div className="profile-header">
+          {/* Avatar shows first letter of name */}
           <div className="profile-avatar">
             {user.name.charAt(0)}
           </div>
@@ -22,6 +26,7 @@ function Profile() {
           <span className="profile-role">{user.role}</span>
         </div>
 
+        {/* User details section */}
         <div className="profile-info">
           <div className="info-item">
             <strong>Email</strong>

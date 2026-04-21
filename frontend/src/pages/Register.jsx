@@ -1,8 +1,10 @@
+// Register page - handles new user registration
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Auth.css'
 
 function Register() {
+  // Single state object for all form fields
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -10,6 +12,7 @@ function Register() {
     role: 'coordinator'
   })
 
+  // Generic handler - updates only the changed field using input name
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
@@ -19,6 +22,7 @@ function Register() {
       <div className="auth-card">
         <h2>Register</h2>
 
+        {/* Full name input */}
         <div className="form-group">
           <label>Full Name</label>
           <input
@@ -30,6 +34,7 @@ function Register() {
           />
         </div>
 
+        {/* Email input */}
         <div className="form-group">
           <label>Email</label>
           <input
@@ -41,6 +46,7 @@ function Register() {
           />
         </div>
 
+        {/* Password input */}
         <div className="form-group">
           <label>Password</label>
           <input
@@ -52,6 +58,7 @@ function Register() {
           />
         </div>
 
+        {/* Role selector - coordinator or instructor */}
         <div className="form-group">
           <label>Role</label>
           <select name="role" value={formData.role} onChange={handleChange}>
@@ -62,6 +69,7 @@ function Register() {
 
         <button className="btn">Register</button>
 
+        {/* Link to login page */}
         <p className="auth-link">
           Already have an account? <Link to="/login">Login</Link>
         </p>
