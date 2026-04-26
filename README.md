@@ -14,29 +14,33 @@ https://workshop-booking-iitb.netlify.app/
 5. Open `http://localhost:5173`
 
 ## Project Structure
-├── Screenshots/               # Screenshots
-├── frontend/                  # React application
-│   ├── public/                # Static assets
+
+```
+workshop-ui/
+├── Screenshots/               
+├── frontend/                  
+│   ├── public/                
 │   └── src/
-│       ├── components/        # Reusable components
-│       │   ├── Navbar.jsx     # Navigation bar shown on all pages
-│       │   ├── Navbar.css     # Navbar styles
-│       │   ├── Footer.jsx     # Footer shown on all pages
-│       │   └── Footer.css     # Footer styles
-│       ├── pages/             # Individual pages
-│       │   ├── Home.jsx       # Workshop listing page
-│       │   ├── Home.css       # Home page styles
-│       │   ├── Login.jsx      # User login page
-│       │   ├── Register.jsx   # User registration page
-│       │   ├── Auth.css       # Shared styles for Login and Register
-│       │   ├── WorkshopDetail.jsx   # Individual workshop info page
-│       │   ├── WorkshopDetail.css   # Workshop detail styles
-│       │   ├── Profile.jsx    # User profile page
-│       │   └── Profile.css    # Profile page styles
-│       ├── App.jsx            # Main app component with routing
-│       ├── main.jsx           # Entry point
-│       └── index.css          # Global styles
-├── README.md                  # Project documentation
+│       ├── components/        
+│       │   ├── Navbar.jsx     
+│       │   ├── Navbar.css     
+│       │   ├── Footer.jsx     
+│       │   └── Footer.css     
+│       ├── pages/             
+│       │   ├── Home.jsx       
+│       │   ├── Home.css       
+│       │   ├── Login.jsx      
+│       │   ├── Register.jsx   
+│       │   ├── Auth.css       
+│       │   ├── WorkshopDetail.jsx   
+│       │   ├── WorkshopDetail.css   
+│       │   ├── Profile.jsx    
+│       │   └── Profile.css    
+│       ├── App.jsx            
+│       ├── main.jsx           
+│       └── index.css          
+└── README.md                  
+```
 
 ## Pages
 - Home - Workshop listing
