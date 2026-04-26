@@ -3,7 +3,7 @@
 ## About
 This is a React-based frontend redesign of the FOSSEE Workshop Booking portal built with Vite + React.
 
-##Live Demo
+## Live Demo
 https://workshop-booking-iitb.netlify.app/
 
 ## Setup Instructions
