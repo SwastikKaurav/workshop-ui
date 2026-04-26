@@ -7,10 +7,33 @@ This is a React-based frontend redesign of the FOSSEE Workshop Booking portal bu
 https://workshop-booking-iitb.netlify.app/
 
 ## Setup Instructions
+
+### Prerequisites
+- Node.js installed on your system
+- Git installed on your system
+
+### Steps to run locally
+
 1. Clone the repository
-2. Navigate to frontend folder: `cd frontend`
-3. Install dependencies: `npm install`
-4. Run the app: `npm run dev`
+```bash
+git clone https://github.com/SwastikKaurav/workshop-ui.git
+```
+
+2. Navigate to frontend folder
+```bash
+cd workshop-ui/frontend
+```
+
+3. Install dependencies
+```bash
+npm install
+```
+
+4. Run the development server
+```bash
+npm run dev
+```
+
 5. Open `http://localhost:5173`
 
 ## Project Structure
