@@ -13,6 +13,31 @@ https://workshop-booking-iitb.netlify.app/
 4. Run the app: `npm run dev`
 5. Open `http://localhost:5173`
 
+## Project Structure
+├── Screenshots/               # Screenshots
+├── frontend/                  # React application
+│   ├── public/                # Static assets
+│   └── src/
+│       ├── components/        # Reusable components
+│       │   ├── Navbar.jsx     # Navigation bar shown on all pages
+│       │   ├── Navbar.css     # Navbar styles
+│       │   ├── Footer.jsx     # Footer shown on all pages
+│       │   └── Footer.css     # Footer styles
+│       ├── pages/             # Individual pages
+│       │   ├── Home.jsx       # Workshop listing page
+│       │   ├── Home.css       # Home page styles
+│       │   ├── Login.jsx      # User login page
+│       │   ├── Register.jsx   # User registration page
+│       │   ├── Auth.css       # Shared styles for Login and Register
+│       │   ├── WorkshopDetail.jsx   # Individual workshop info page
+│       │   ├── WorkshopDetail.css   # Workshop detail styles
+│       │   ├── Profile.jsx    # User profile page
+│       │   └── Profile.css    # Profile page styles
+│       ├── App.jsx            # Main app component with routing
+│       ├── main.jsx           # Entry point
+│       └── index.css          # Global styles
+├── README.md                  # Project documentation
+
 ## Pages
 - Home - Workshop listing
 - Login - User login
